@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/europanuova" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <title>Trazler</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container">
+
+          <div class="header__lang">
+            <select id="languageSwitcher">
+              <option class="header__lang-option" value="en">EN</option>
+              <option class="header__lang-option" value="es">ES</option>
+            </select>
+          </div>
+          
+          <div class="header__inner">
+            <a href="/single.html" class="logo header__logo">
+              <img src="./public/images/header/logo.png" alt="logo" width="360" height="49" loading="lazy">
+            </a>
+            
+            <nav>
+              <ul class="header__menu animate__animated animate__fadeIn animate__delay-1s">
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.destinations">DESTINATIONS</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.food">Food</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.wellbeing">Well being</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.sport">Sport</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.family">Family</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.lifestyle">Lifestyle</a>
+                </li>
+              </ul>
+
+              
+            </nav>
+
+
+
+
+            <nav>
+              <ul class="header__menu header__menu--mobile">
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.destinations">DESTINATIONS</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.food">Food</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.wellbeing">Well being</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.sport">Sport</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.family">Family</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/single.html"  class="header__menu-link" data-i18n="menu.lifestyle">Lifestyle</a>
+                </li>
+                <li>
+                  <a href="/single.html" > <img src="./public/images/header/search.svg" alt="search" width="27" height="27"></a>
+                </li>
+                <li></li>
+                <button class="header__actions-btn btn btn--black" data-i18n="menu.call"> Call to action</button>
+
+              </ul>
+             
+            </nav>
+            
+            <div class="header__actions">
+              <a href="/single.html" > <img src="./public/images/header/search.svg" alt="search" width="27" height="27"></a>
+              <button class="header__actions-btn btn btn--black" data-i18n="menu.call"> Call to action</button>
+            </div>
+            
+            <div class="header__burger">
+              <button class="header__burger-toggle" aria-label="Toggle menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+
+
+        
+       
+        <div class="header__text-inner">
+          <h1 class="title header__title animate__animated animate__backInLeft animate__delay-1s" data-i18n="header.title">
+            Inspiration for travel by real people
+          </h1>
+          <p class="header__subtitle" data-i18n="header.subtitle">Book smart, travel simple</p>
+  
+          <button class="btn header__start-btn" data-i18n="header.start">Start planning your trip</button>
+        </div>
+      </header>
+
+      <main>
+        <section class=" section-places">
+          <div class="container">
+            <div class="place">
+              <ul class="place__social">
+                <li class="place__social-item">
+                  <a href="/single.html"  class="place__social-link">
+                    <svg class="place__social-icon" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" id="facebook" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="primary" d="M14,6h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H14A5,5,0,0,0,9,7v3H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9v7a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h2.22a1,1,0,0,0,1-.76l.5-2a1,1,0,0,0-1-1.24H13V7A1,1,0,0,1,14,6Z"></path></svg>
+                    <span>3.7 M</span>
+                  </a>
+                </li>
+
+                <li class="place__social-item">
+                  <a href="/single.html"  class="place__social-link">
+                    <svg class="place__social-icon"  fill="currentColor" height="24" width="24" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"  
+                    viewBox="0 0 32 32" xml:space="preserve">
+                 <path d="M23,0H9C4,0,0,4,0,9v6v8c0,5,4,9,9,9h14c5,0,9-4,9-9v-8V9C32,4,28,0,23,0z M16,10c3.3,0,6,2.7,6,6s-2.7,6-6,6s-6-2.7-6-6
+                   S12.7,10,16,10z M22,7c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S22,8.1,22,7z"/>
+                 </svg>
+                    <span>2.4 M</span>
+                  </a>
+                </li>
+
+                <li class="place__social-item">
+                  <a href="/single.html"  class="place__social-link">
+                    <svg class="place__social-icon"  fill="currentColor" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z"/></svg>
+
+                    <span>3.7 M</span>
+                  </a>
+                </li>
+
+                <li class="place__social-item">
+                  <a href="/single.html"  class="place__social-link">
+                    <svg class="place__social-icon"  fill="currentColor" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z"/></svg>
+
+                    <span>2.4 M</span>
+                  </a>
+                </li>
+
+              </ul>
+
+          
+              <div class="place__inner">
+                <div class="place__item">
+                  <div class="place__item-top">
+                    <img src="./public/images/places/place-1.jpg" alt="place" width="560" height="420" loading="lazy">
+                    <div class="place__name-inner">
+                      <div class="place__name-tags">
+                        <span class="place__name-tag" data-i18n="place.aenean">Aenean Eleifend</span>
+                        <span class="place__name-tag" data-i18n="place.aliquam">Aliquam</span>
+                      </div>
+                     
+                        <a href="/single.html"  class="place__name-link">
+                          <img src="./public/images/places/tabler.svg" class="place__name-icon" width="16" height="16" />
+                        </a>
+                      
+                    </div>
+                  </div>
+                  <div class="place__item-body">
+                    <h2 class="visually-hidden"></h2>
+                    <h3 class="place__item-title">Integer Maecenas Eget Viverra</h3>
+                    <div class="place__item-meta">
+                      <img class="place__item-ava" src="./public/images/places/ava.jpg" alt="ava" width="40" height="40">
+                      <span class="place__item-author">Joanna Wellick</span>
+                      <span class="place__item-line"></span>
+                      <span class="place__item-date" data-i18n="place.june">June 28, 2018</span>
+                      <span class="place__item-dot"></span>
+                      <span class="place__item-share">
+                        <img src="./public/images/places/share.svg" alt="share" width="15" height="16">
+                      </span>
+                      <span class="place__item-shares" data-i18n="place.shares">1K shares</span>
+                    </div>
+  
+                    <p class="place__item-desc" data-i18n="place.descr">Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.
+                     
+                    </p>
+                    <a href="/single.html"  class="view-post" data-i18n="place.view"> View Post</a>
+                  </div>
+                </div>
+  
+                <div class="place__item">
+                  <div class="place__item-top">
+                    <img src="./public/images/places/place-2.jpg" alt="place" width="560" height="420" loading="lazy">
+                    <div class="place__name-inner">
+                      <div class="place__name-tags">
+                        <span class="place__name-tag" data-i18n="place.aenean">Aenean Eleifend</span>
+                        <span class="place__name-tag" data-i18n="place.aliquam">Aliquam</span>
+                      </div>
+                     
+                        <a href="/single.html"  class="place__name-link">
+                          <img src="./public/images/places/play.svg" class="place__name-icon" width="16" height="16" />
+                        </a>
+                      
+                    </div>
+                  </div>
+                  <div class="place__item-body">
+                    <h2 class="visually-hidden"></h2>
+                    <h3 class="place__item-title">Integer Maecenas Eget Viverra</h3>
+                    <div class="place__item-meta">
+                      <img class="place__item-ava" src="./public/images/places/ava.jpg" alt="ava" width="40" height="40">
+                      <span class="place__item-author">Joanna Wellick</span>
+                      <span class="place__item-line"></span>
+                      <span class="place__item-date" data-i18n="place.june">June 28, 2018</span>
+                      <span class="place__item-dot"></span>
+                      <span class="place__item-share">
+                        <img src="./public/images/places/share.svg" alt="share" width="15" height="16">
+                      </span>
+                      <span class="place__item-shares" data-i18n="place.shares">1K shares</span>
+                    </div>
+  
+                    <p class="place__item-desc" data-i18n="place.descr">Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.
+                     
+                    </p>
+                    <a href="/single.html"  class="view-post" data-i18n="place.view"> View Post</a>
+                  </div>
+                </div>
+  
+                <div class="place__item">
+                  <div class="place__item-top">
+                    <img src="./public/images/places/place-3.jpg" alt="place" width="560" height="420" loading="lazy">
+                    <div class="place__name-inner">
+                      <div class="place__name-tags">
+                        <span class="place__name-tag" data-i18n="place.aenean">Aenean Eleifend</span>
+                        <span class="place__name-tag" data-i18n="place.aliquam">Aliquam</span>
+                      </div>
+                     
+                        <a href="/single.html"  class="place__name-link">
+                          <img src="./public/images/places/tabler.svg" class="place__name-icon" width="16" height="16" />
+                        </a>
+                      
+                    </div>
+                  </div>
+                  <div class="place__item-body">
+                    <h2 class="visually-hidden"></h2>
+                    <h3 class="place__item-title">Integer Maecenas Eget Viverra</h3>
+                    <div class="place__item-meta">
+                      <img class="place__item-ava" src="./public/images/places/ava.jpg" alt="ava" width="40" height="40">
+                      <span class="place__item-author">Joanna Wellick</span>
+                      <span class="place__item-line"></span>
+                      <span class="place__item-date" data-i18n="place.june">June 28, 2018</span>
+                      <span class="place__item-dot"></span>
+                      <span class="place__item-share">
+                        <img src="./public/images/places/share.svg" alt="share" width="15" height="16">
+                      </span>
+                      <span class="place__item-shares" data-i18n="place.shares">1K shares</span>
+                    </div>
+  
+                    <p class="place__item-desc" data-i18n="place.descr">Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.
+                     
+                    </p>
+                    <a href="/single.html"  class="view-post" data-i18n="place.view"> View Post</a>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </section>
+
+        <section class="travel">
+         <div class="container">
+          <span class="travel__tag" data-i18n="travel.travel">Travel</span>
+          <h2 class="travel__title" data-i18n="travel.title">Richird Norton photorealistic rendering as real photos</h2>
+          <p class="travel__subtitle" data-i18n="travel.subtitle">Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
+          <button class="btn travel__btn" data-i18n="travel.start"> Start planning your trip</button>
+         </div>
+        </section>
+
+        <section class="section-destination">
+          <div class="container">
+           
+            <div class="destination">
+              <h3 class="destination__title" data-i18n="destination.title">
+                Top Destinations
+              </h3>
+              <p class="destination__subtitle" data-i18n="destination.subtitle">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</p>
+
+              <div class="destination__items">
+                
+                <a href="/single.html" >
+                  <div class="destination__item">
+                    <img class="destination__item-img" src="./public/images/destination/destination-1.jpg" alt="destination" loading="lazy" width="320" height="260">
+                   <h4 class="destination__item-title" data-i18n="destination.dominican">Dominican Republic</h4>
+                </div>
+                </a>
+              
+
+              <a href="/single.html" >
+                <div class="destination__item">
+                  <img class="destination__item-img" src="./public/images/destination/destination-2.jpg" alt="destination" loading="lazy" width="320" height="260">
+                 <h4 class="destination__item-title" data-i18n="destination.maecenas">Maecenas Tincidunt</h4>
+              </div>
+              </a>
+
+             
+
+            <a href="/single.html" >
+              <div class="destination__item">
+                <img class="destination__item-img" src="./public/images/destination/destination-3.jpg" alt="destination" loading="lazy" width="320" height="260">
+               <h4 class="destination__item-title" data-i18n="destination.dominican">Dominican Republic</h4>
+            </div>
+            </a>
+
+          
+
+          <a href="/single.html" >
+            <div class="destination__item">
+              <img class="destination__item-img" src="./public/images/destination/destination-4.jpg" alt="destination" loading="lazy" width="320" height="260">
+             <h4 class="destination__item-title" data-i18n="destination.dominican">Dominican Republic</h4>
+          </div>
+          </a>
+
+          <a href="/single.html" >
+            <div class="destination__item">
+              <img class="destination__item-img" src="./public/images/destination/destination-5.jpg" alt="destination" loading="lazy" width="320" height="260">
+             <h4 class="destination__item-title" data-i18n="destination.dominican">Dominican Republic</h4>
+          </div>
+          </a>
+
+        
+          </div>
+        </section>
+
+        <section class="section-category">
+          <div class="container">
+            <div class="category">
+              <div class="category__tabs">
+                <button class="category__tab category__tab--active" data-tab="1" data-i18n="category.category">Category name</button>
+                <button class="category__tab" data-tab="2" data-i18n="category.category">Category name</button>
+                <button class="category__tab" data-tab="3" data-i18n="category.category">Category name</button>
+                <button class="category__tab" data-tab="4" data-i18n="category.category">Category name</button>
+                <button class="category__tab" data-tab="5" data-i18n="category.category">Category name</button>
+                <button class="category__tab" data-tab="6" data-i18n="category.category">Category name</button>
+              </div>
+            
+              <div class="category__content">
+                <div class="category__cont-inner category__cont-inner--active ">
+                  <div class="category__panel category__panel--active category-box" data-panel="1">
+                    <div class="category__left">
+                      <img src="./public/images/category/category.jpg" alt="category" loading="lazy" width="600" height="280">
+                      <span class="category__date" data-i18n="category.month">1 Month Ago </span>
+                      <h3 class="category__title" data-i18n="category.title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h3>
+                      <p class="category__subtitle" data-i18n="category.subtitle">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                      <a href="/single.html"  class="view-post category__view" data-i18n="category.view">View Post</a>
+                    </div>
+                  
+                      
+                        <ul class="category__list">
+                          <li class="category__list-item">
+                            <img class="category__list-img" src="./public/images/category/category-2.jpg" alt="category" loading="lazy" width="144" height="100">
+                          
+                              <a href="/single.html"  class="category__list-link">
+                                <h4 class="category__list-title" data-i18n="category.akame">Akame Ga Kill: Season finale</h4>
+                              <time class="category__list-time"  datetime="2021-03-21" data-i18n="category.date"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                         
+                            <li class="category__list-item">
+                              <img class="category__list-img" src="./public/images/category/category-3.jpg" alt="category" loading="lazy" width="144" height="100">
+                            
+                                <a href="/single.html"  class="category__list-link">
+                                  <h4 class="category__list-title" data-i18n="category.naruto">Naruto Uzumaki: Hidden Village</h4>
+                                <time class="category__list-time"  datetime="2021-03-21" data-i18n="category.date"> 21 March 2021</time>
+                                </a>
+                             
+                              </li>
+  
+  
+                              <li class="category__list-item">
+                                <img class="category__list-img" src="./public/images/category/category-4.jpg" alt="category" loading="lazy" width="144" height="100">
+                              
+                                  <a href="/single.html"  class="category__list-link">
+                                    <h4 class="category__list-title" data-i18n="category.love">Love juice Season Priemere</h4>
+                                    <time class="category__list-time"  datetime="2021-03-21" data-i18n="category.date"> 21 March 2021</time>
+                                  </a>
+                               
+                                </li>
+  
+                                <li class="category__list-item">
+                                  <img class="category__list-img" src="./public/images/category/category-5.jpg" alt="category" loading="lazy" width="144" height="100">
+                                
+                                    <a href="/single.html"  class="category__list-link">
+                                      <h4 class="category__list-title" data-i18n="category.love">Love juice Season Priemere</h4>
+                                     <time class="category__list-time"  datetime="2021-03-21" data-i18n="category.date"> 21 March 2021</time>
+                                    </a>
+                                 
+                                   
+                                  </li>
+  
+                            
+                        </ul>
+                     
+                   
+                  </div>
+
+                  <div class="category__right">
+                    <h3 class="category__right-title" data-i18n="category.manga">Manga reads</h3>
+                    <ul class="category__list category__list--wide">
+                      <li class="category__list-item">
+                        <img src="./public/images/category/category-6.jpg" alt="category" loading="lazy" width="270" height="120">
+                      
+                          <a href="/single.html"  class="category__list-link category__list-link--wide">
+                          <h4 class="category__list-title" data-i18n="category.tick">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                          <time class="category__list-time"  datetime="2021-03-21" data-i18n="category.date"> 21 March 2021</time>
+                          </a>
+                       
+                        </li>
+
+                        <li class="category__list-item">
+                          <img src="./public/images/category/category-7.jpg" alt="category" loading="lazy" width="270" height="120">
+                        
+                            <a href="/single.html"  class="category__list-link category__list-link--wide">
+                            <h4 class="category__list-title" data-i18n="category.tick">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                            <time class="category__list-time"  datetime="2021-03-21" data-i18n="category.date"> 21 March 2021</time>
+                            </a>
+                         
+                          </li>
+
+                          <li class="category__list-item">
+                            <img src="./public/images/category/category-8.jpg" alt="category" loading="lazy" width="270" height="120">
+                          
+                              <a href="/single.html"  class="category__list-link category__list-link--wide">
+                              <h4 class="category__list-title" data-i18n="category.tick">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                              <time class="category__list-time"  datetime="2021-03-21" data-i18n="category.date"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                        
+                    </ul>
+                  </div>
+                  
+                      
+                   
+                </div>
+                
+            
+                <div class="category__cont-inner">
+                  
+                  <div class="category__panel category-box" data-panel="2">
+                    
+                    <div class="category__left">
+                      <h3>tab 2</h3>
+                      <img src="./public/images/category/category.jpg" alt="category" loading="lazy" width="600" height="280">
+                      <span class="category__date">1 Month Ago </span>
+                      <h3 class="category__title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h3>
+                      <p class="category__subtitle">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                      <a href="/single.html"  class="view-post category__view">View Post</a>
+                    </div>
+                  
+                      
+                        <ul class="category__list">
+                          <li class="category__list-item">
+                            <img class="category__list-img" src="./public/images/category/category-2.jpg" alt="category" loading="lazy" width="144" height="100">
+                          
+                              <a href="/single.html"  class="category__list-link">
+                                <h4 class="category__list-title">Akame Ga Kill: Season finale</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                         
+                            <li class="category__list-item">
+                              <img class="category__list-img" src="./public/images/category/category-3.jpg" alt="category" loading="lazy" width="144" height="100">
+                            
+                                <a href="/single.html"  class="category__list-link">
+                                  <h4 class="category__list-title">Naruto Uzumaki: Hidden Village</h4>
+                                <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                </a>
+                             
+                              </li>
+  
+  
+                              <li class="category__list-item">
+                                <img class="category__list-img" src="./public/images/category/category-4.jpg" alt="category" loading="lazy" width="144" height="100">
+                              
+                                  <a href="/single.html"  class="category__list-link">
+                                    <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                  <date  class="category__list-time">21 March 2021</date>
+                                  </a>
+                               
+                                </li>
+  
+                                <li class="category__list-item">
+                                  <img class="category__list-img" src="./public/images/category/category-5.jpg" alt="category" loading="lazy" width="144" height="100">
+                                
+                                    <a href="/single.html"  class="category__list-link">
+                                      <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                    <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                    </a>
+                                 
+                                   
+                                  </li>
+  
+                            
+                        </ul>
+                     
+                   
+                  </div>
+
+                  <div class="category__right">
+                    <h3 class="category__right-title">Manga reads</h3>
+                    <ul class="category__list category__list--wide">
+                      <li class="category__list-item">
+                        <img class="category__list-img" src="./public/images/category/category-6.jpg" alt="category" loading="lazy" width="270" height="120">
+                      
+                          <a href="/single.html"  class="category__list-link category__list-link--wide">
+                          <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                          <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                          </a>
+                       
+                        </li>
+
+                        <li class="category__list-item">
+                          <img class="category__list-img" src="./public/images/category/category-7.jpg" alt="category" loading="lazy" width="270" height="120">
+                        
+                            <a href="/single.html"  class="category__list-link category__list-link--wide">
+                            <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                            <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                            </a>
+                         
+                          </li>
+
+                          <li class="category__list-item">
+                            <img class="category__list-img" src="./public/images/category/category-8.jpg" alt="category" loading="lazy" width="270" height="120">
+                          
+                              <a href="/single.html"  class="category__list-link category__list-link--wide">
+                              <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                        
+                    </ul>
+                  </div>
+                  
+                      
+                   
+                </div>
+            
+                <div class="category__cont-inner">
+                  
+                  <div class="category__panel category-box" data-panel="3">
+                    
+                    <div class="category__left">
+                      <h3>tab 3</h3>
+                      <img src="./public/images/category/category.jpg" alt="category" loading="lazy" width="600" height="280">
+                      <span class="category__date">1 Month Ago </span>
+                      <h3 class="category__title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h3>
+                      <p class="category__subtitle">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                      <a href="/single.html"  class="view-post category__view">View Post</a>
+                    </div>
+                  
+                      
+                        <ul class="category__list">
+                          <li class="category__list-item">
+                            <img class="category__list-img" src="./public/images/category/category-2.jpg" alt="category" loading="lazy" width="144" height="100">
+                          
+                              <a href="/single.html"  class="category__list-link">
+                                <h4 class="category__list-title">Akame Ga Kill: Season finale</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                         
+                            <li class="category__list-item">
+                              <img class="category__list-img" src="./public/images/category/category-3.jpg" alt="category" loading="lazy" width="144" height="100">
+                            
+                                <a href="/single.html"  class="category__list-link">
+                                  <h4 class="category__list-title">Naruto Uzumaki: Hidden Village</h4>
+                                <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                </a>
+                             
+                              </li>
+  
+  
+                              <li class="category__list-item">
+                                <img class="category__list-img" src="./public/images/category/category-4.jpg" alt="category" loading="lazy" width="144" height="100">
+                              
+                                  <a href="/single.html"  class="category__list-link">
+                                    <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                  <date  class="category__list-time">21 March 2021</date>
+                                  </a>
+                               
+                                </li>
+  
+                                <li class="category__list-item">
+                                  <img class="category__list-img" src="./public/images/category/category-5.jpg" alt="category" loading="lazy" width="144" height="100">
+                                
+                                    <a href="/single.html"  class="category__list-link">
+                                      <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                    <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                    </a>
+                                 
+                                   
+                                  </li>
+  
+                            
+                        </ul>
+                     
+                   
+                  </div>
+
+                  <div class="category__right">
+                    <h3 class="category__right-title">Manga reads</h3>
+                    <ul class="category__list category__list--wide">
+                      <li class="category__list-item">
+                        <img src="./public/images/category/category-6.jpg" alt="category" loading="lazy" width="270" height="120">
+                      
+                          <a href="/single.html"  class="category__list-link category__list-link--wide">
+                          <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                          <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                          </a>
+                       
+                        </li>
+
+                        <li class="category__list-item">
+                          <img src="./public/images/category/category-7.jpg" alt="category" loading="lazy" width="270" height="120">
+                        
+                            <a href="/single.html"  class="category__list-link category__list-link--wide">
+                            <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                            <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                            </a>
+                         
+                          </li>
+
+                          <li class="category__list-item">
+                            <img src="./public/images/category/category-8.jpg" alt="category" loading="lazy" width="270" height="120">
+                          
+                              <a href="/single.html"  class="category__list-link category__list-link--wide">
+                              <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                        
+                    </ul>
+                  </div>
+                  
+                      
+                   
+                </div>
+
+
+                <div class="category__cont-inner">
+                  
+                  <div class="category__panel category-box" data-panel="4">
+                    
+                    <div class="category__left">
+                      <h3>tab 4</h3>
+                      <img src="./public/images/category/category.jpg" alt="category" loading="lazy" width="600" height="280">
+                      <span class="category__date">1 Month Ago </span>
+                      <h3 class="category__title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h3>
+                      <p class="category__subtitle">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                      <a href="/single.html"  class="view-post category__view">View Post</a>
+                    </div>
+                  
+                      
+                        <ul class="category__list">
+                          <li class="category__list-item">
+                            <img class="category__list-img" src="./public/images/category/category-2.jpg" alt="category" loading="lazy" width="144" height="100">
+                          
+                              <a href="/single.html"  class="category__list-link">
+                                <h4 class="category__list-title">Akame Ga Kill: Season finale</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                         
+                            <li class="category__list-item">
+                              <img class="category__list-img" src="./public/images/category/category-3.jpg" alt="category" loading="lazy" width="144" height="100">
+                            
+                                <a href="/single.html"  class="category__list-link">
+                                  <h4 class="category__list-title">Naruto Uzumaki: Hidden Village</h4>
+                                <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                </a>
+                             
+                              </li>
+  
+  
+                              <li class="category__list-item">
+                                <img class="category__list-img" src="./public/images/category/category-4.jpg" alt="category" loading="lazy" width="144" height="100">
+                              
+                                  <a href="/single.html"  class="category__list-link">
+                                    <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                  <date  class="category__list-time">21 March 2021</date>
+                                  </a>
+                               
+                                </li>
+  
+                                <li class="category__list-item">
+                                  <img class="category__list-img" src="./public/images/category/category-5.jpg" alt="category" loading="lazy" width="144" height="100">
+                                
+                                    <a href="/single.html"  class="category__list-link">
+                                      <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                    <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                    </a>
+                                 
+                                   
+                                  </li>
+  
+                            
+                        </ul>
+                     
+                   
+                  </div>
+
+                  <div class="category__right">
+                    <h3 class="category__right-title">Manga reads</h3>
+                    <ul class="category__list category__list--wide">
+                      <li class="category__list-item">
+                        <img src="./public/images/category/category-6.jpg" alt="category" loading="lazy" width="270" height="120">
+                      
+                          <a href="/single.html"  class="category__list-link category__list-link--wide">
+                          <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                          <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                          </a>
+                       
+                        </li>
+
+                        <li class="category__list-item">
+                          <img src="./public/images/category/category-7.jpg" alt="category" loading="lazy" width="270" height="120">
+                        
+                            <a href="/single.html"  class="category__list-link category__list-link--wide">
+                            <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                            <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                            </a>
+                         
+                          </li>
+
+                          <li class="category__list-item">
+                            <img src="./public/images/category/category-8.jpg" alt="category" loading="lazy" width="270" height="120">
+                          
+                              <a href="/single.html"  class="category__list-link category__list-link--wide">
+                              <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                        
+                    </ul>
+                  </div>
+                  
+                      
+                   
+                </div>
+
+
+                <div class="category__cont-inner">
+                  
+                  <div class="category__panel category-box" data-panel="5">
+                    
+                    <div class="category__left">
+                      <h3>tab 5</h3>
+                      <img src="./public/images/category/category.jpg" alt="category" loading="lazy" width="600" height="280">
+                      <span class="category__date">1 Month Ago </span>
+                      <h3 class="category__title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h3>
+                      <p class="category__subtitle">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                      <a href="/single.html"  class="view-post category__view">View Post</a>
+                    </div>
+                  
+                      
+                        <ul class="category__list">
+                          <li class="category__list-item">
+                            <img class="category__list-img" src="./public/images/category/category-2.jpg" alt="category" loading="lazy" width="144" height="100">
+                          
+                              <a href="/single.html"  class="category__list-link">
+                                <h4 class="category__list-title">Akame Ga Kill: Season finale</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                         
+                            <li class="category__list-item">
+                              <img class="category__list-img" src="./public/images/category/category-3.jpg" alt="category" loading="lazy" width="144" height="100">
+                            
+                                <a href="/single.html"  class="category__list-link">
+                                  <h4 class="category__list-title">Naruto Uzumaki: Hidden Village</h4>
+                                <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                </a>
+                             
+                              </li>
+  
+  
+                              <li class="category__list-item">
+                                <img class="category__list-img" src="./public/images/category/category-4.jpg" alt="category" loading="lazy" width="144" height="100">
+                              
+                                  <a href="/single.html"  class="category__list-link">
+                                    <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                  <date  class="category__list-time">21 March 2021</date>
+                                  </a>
+                               
+                                </li>
+  
+                                <li class="category__list-item">
+                                  <img class="category__list-img" src="./public/images/category/category-5.jpg" alt="category" loading="lazy" width="144" height="100">
+                                
+                                    <a href="/single.html"  class="category__list-link">
+                                      <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                    <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                    </a>
+                                 
+                                   
+                                  </li>
+  
+                            
+                        </ul>
+                     
+                   
+                  </div>
+
+                  <div class="category__right">
+                    <h3 class="category__right-title">Manga reads</h3>
+                    <ul class="category__list category__list--wide">
+                      <li class="category__list-item">
+                        <img src="./public/images/category/category-6.jpg" alt="category" loading="lazy" width="270" height="120">
+                      
+                          <a href="/single.html"  class="category__list-link category__list-link--wide">
+                          <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                          <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                          </a>
+                       
+                        </li>
+
+                        <li class="category__list-item">
+                          <img src="./public/images/category/category-7.jpg" alt="category" loading="lazy" width="270" height="120">
+                        
+                            <a href="/single.html"  class="category__list-link category__list-link--wide">
+                            <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                            <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                            </a>
+                         
+                          </li>
+
+                          <li class="category__list-item">
+                            <img src="./public/images/category/category-8.jpg" alt="category" loading="lazy" width="270" height="120">
+                          
+                              <a href="/single.html"  class="category__list-link category__list-link--wide">
+                              <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                        
+                    </ul>
+                  </div>
+                  
+                      
+                   
+                </div>
+
+
+                <div class="category__cont-inner">
+                  
+                  <div class="category__panel category-box" data-panel="6">
+                    
+                    <div class="category__left">
+                      <h3>tab 6</h3>
+                      <img src="./public/images/category/category.jpg" alt="category" loading="lazy" width="600" height="280">
+                      <span class="category__date">1 Month Ago </span>
+                      <h3 class="category__title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h3>
+                      <p class="category__subtitle">lit. Phasellus aliquet nibh id iaculis pharetra. Maecenas  eleifend sed ex. Donec quis magna sed felis elementum blandit nec quis sem. Maecen.</p>
+                      <a href="/single.html"  class="view-post category__view">View Post</a>
+                    </div>
+                  
+                      
+                        <ul class="category__list">
+                          <li class="category__list-item">
+                            <img class="category__list-img" src="./public/images/category/category-2.jpg" alt="category" loading="lazy" width="144" height="100">
+                          
+                              <a href="/single.html"  class="category__list-link">
+                                <h4 class="category__list-title">Akame Ga Kill: Season finale</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                         
+                            <li class="category__list-item">
+                              <img class="category__list-img" src="./public/images/category/category-3.jpg" alt="category" loading="lazy" width="144" height="100">
+                            
+                                <a href="/single.html"  class="category__list-link">
+                                  <h4 class="category__list-title">Naruto Uzumaki: Hidden Village</h4>
+                                <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                </a>
+                             
+                              </li>
+  
+  
+                              <li class="category__list-item">
+                                <img class="category__list-img" src="./public/images/category/category-4.jpg" alt="category" loading="lazy" width="144" height="100">
+                              
+                                  <a href="/single.html"  class="category__list-link">
+                                    <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                  <date  class="category__list-time">21 March 2021</date>
+                                  </a>
+                               
+                                </li>
+  
+                                <li class="category__list-item">
+                                  <img class="category__list-img" src="./public/images/category/category-5.jpg" alt="category" loading="lazy" width="144" height="100">
+                                
+                                    <a href="/single.html"  class="category__list-link">
+                                      <h4 class="category__list-title">Love juice Season Priemere</h4>
+                                    <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                                    </a>
+                                 
+                                   
+                                  </li>
+  
+                            
+                        </ul>
+                     
+                   
+                  </div>
+
+                  <div class="category__right">
+                    <h3 class="category__right-title">Manga reads</h3>
+                    <ul class="category__list category__list--wide">
+                      <li class="category__list-item">
+                        <img src="./public/images/category/category-6.jpg" alt="category" loading="lazy" width="270" height="120">
+                      
+                          <a href="/single.html"  class="category__list-link category__list-link--wide">
+                          <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                          <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                          </a>
+                       
+                        </li>
+
+                        <li class="category__list-item">
+                          <img src="./public/images/category/category-7.jpg" alt="category" loading="lazy" width="270" height="120">
+                        
+                            <a href="/single.html"  class="category__list-link category__list-link--wide">
+                            <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                            <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                            </a>
+                         
+                          </li>
+
+                          <li class="category__list-item">
+                            <img src="./public/images/category/category-8.jpg" alt="category" loading="lazy" width="270" height="120">
+                          
+                              <a href="/single.html"  class="category__list-link category__list-link--wide">
+                              <h4 class="category__list-title">Tick one more destination off of your bucket list with one of our most popular vacations in 2022</h4>
+                              <time class="category__list-time"  datetime="2021-03-21"> 21 March 2021</time>
+                              </a>
+                           
+                            </li>
+                        
+                    </ul>
+                  </div>
+                  
+                      
+                   
+                </div>
+            
+          
+              </div>
+            </div>
+            
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div>
+              <p class="footer__developed" ><span data-i18n="footer.developed">Designed & Developed by </span> <span class="footer__developed-design" span data-i18n="footer.design" >XP DESIGN</span></p>
+            </div>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="/single.html"  class="footer__social-link">
+                  <svg class="footer__social-icon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="currentColor" d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"/></svg>
+                  <span class="place__item-shares">29</span>
+                </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="/single.html"  class="footer__social-link">
+                    <svg class="footer__social-icon"  width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.9773 1.46694C14.964 1.26637 14.8319 1.09326 14.642 1.02752C14.452 0.961775 14.2412 1.01618 14.1067 1.16562C13.7611 1.54977 13.3243 1.81009 12.881 1.92878C12.2644 1.35315 11.436 1.00002 10.5256 1.00002C8.57181 1.00002 6.98923 2.58615 6.98923 4.54112V4.98092C3.99799 4.74976 2.39838 2.47748 1.96675 1.3247C1.89698 1.13836 1.72337 1.01112 1.52468 1.00071C1.32598 0.990288 1.14002 1.09867 1.05114 1.27669C0.00441813 3.37338 -0.156858 5.40696 0.603899 7.13863C1.27032 8.65556 2.61055 9.86392 4.51008 10.6645C3.64679 11.2763 2.19379 12 0.500039 12C0.279771 12 0.0854497 12.1442 0.0215445 12.355C-0.0423608 12.5658 0.0392055 12.7935 0.222392 12.9158C1.8465 14.0003 3.54865 14.0001 5.13184 14L5.1803 14C10.041 14 13.98 10.0538 13.98 5.18751V4.70922C14.3434 4.33984 14.6264 3.96173 14.7998 3.4729C14.9932 2.92746 15.0322 2.295 14.9773 1.46694Z" fill="currentColor"/>
+                      </svg>
+
+                      <span class="place__item-shares">70K</span>
+                  </a>
+                  </li>
+
+                <li class="footer__social-item">
+                  <a href="/single.html"  class="footer__social-link">
+                    <svg class="footer__social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46471 1.0662C8.63794 1.01266 9.01258 1 12 1C14.9874 1 15.362 1.01266 16.5352 1.0662C17.7061 1.1196 18.5057 1.30556 19.2054 1.57751C19.9288 1.85858 20.5422 2.2347 21.1537 2.84623C21.7653 3.45779 22.1414 4.07123 22.4225 4.79454C22.6944 5.49426 22.8804 6.29385 22.9338 7.46471C22.9873 8.63798 23 9.01258 23 12C23 14.9874 22.9873 15.362 22.9338 16.5353C22.8804 17.7061 22.6944 18.5057 22.4225 19.2054C22.1414 19.9288 21.7653 20.5422 21.1537 21.1537C20.5422 21.7653 19.9288 22.1414 19.2054 22.4225C18.5057 22.6944 17.7061 22.8804 16.5352 22.9338C15.362 22.9873 14.9874 23 12 23C9.01258 23 8.63794 22.9873 7.46471 22.9338C6.29385 22.8804 5.49426 22.6944 4.79454 22.4225C4.07123 22.1414 3.45775 21.7653 2.84623 21.1537C2.23466 20.5422 1.85858 19.9287 1.57746 19.2054C1.30552 18.5057 1.1196 17.7061 1.06615 16.5353C1.01262 15.362 1 14.9874 1 12C1 9.01254 1.01262 8.63798 1.06615 7.46471C1.1196 6.29385 1.30552 5.49426 1.57746 4.79454C1.85858 4.07123 2.23466 3.45779 2.84623 2.84623C3.45775 2.2347 4.07123 1.85858 4.79454 1.57751C5.49426 1.30556 6.29385 1.1196 7.46471 1.0662ZM16.4449 3.04608C15.285 2.99316 14.9371 2.98198 12 2.98198C9.06284 2.98198 8.71496 2.99316 7.55501 3.04608C6.48257 3.09503 5.90008 3.27423 5.51247 3.42487C4.99906 3.62442 4.63259 3.86278 4.24768 4.24773C3.86278 4.63263 3.62437 4.99906 3.42482 5.51252C3.27423 5.90013 3.09503 6.48257 3.04608 7.55506C2.99316 8.71496 2.98198 9.06288 2.98198 12C2.98198 14.9371 2.99316 15.285 3.04608 16.4449C3.09503 17.5174 3.27423 18.0999 3.42482 18.4875C3.62437 19.0009 3.86278 19.3674 4.24768 19.7523C4.63259 20.1372 4.99906 20.3756 5.51247 20.5751C5.90008 20.7257 6.48257 20.905 7.55506 20.9539C8.71479 21.0068 9.06262 21.018 12 21.018C14.9373 21.018 15.2852 21.0068 16.4449 20.9539C17.5174 20.905 18.0998 20.7257 18.4874 20.5751C19.0009 20.3756 19.3674 20.1372 19.7523 19.7523C20.1372 19.3674 20.3755 19.0009 20.5751 18.4875C20.7257 18.0999 20.9049 17.5174 20.9539 16.4449C21.0068 15.285 21.018 14.9371 21.018 12C21.018 9.06288 21.0068 8.71496 20.9539 7.55506C20.9049 6.48257 20.7257 5.90013 20.5751 5.51252C20.3755 4.99906 20.1372 4.63263 19.7523 4.24768C19.3674 3.86278 19.0009 3.62442 18.4874 3.42487C18.0998 3.27423 17.5174 3.09503 16.4449 3.04608ZM8.33329 12C8.33329 14.025 9.97495 15.6667 12 15.6667C14.025 15.6667 15.6667 14.025 15.6667 12C15.6667 9.97495 14.025 8.33333 12 8.33333C9.97495 8.33333 8.33329 9.97495 8.33329 12ZM6.35131 12C6.35131 8.88032 8.88032 6.35136 12 6.35136C15.1196 6.35136 17.6486 8.88032 17.6486 12C17.6486 15.1197 15.1196 17.6486 12 17.6486C8.88032 17.6486 6.35131 15.1197 6.35131 12ZM17.8718 7.44816C18.6008 7.44816 19.1918 6.8572 19.1918 6.12818C19.1918 5.39915 18.6008 4.8082 17.8718 4.8082C17.1428 4.8082 16.5518 5.39915 16.5518 6.12818C16.5518 6.8572 17.1428 7.44816 17.8718 7.44816Z" fill="currentColor"/>
+                      <mask id="mask0_2844_2717" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46471 1.0662C8.63794 1.01266 9.01258 1 12 1C14.9874 1 15.362 1.01266 16.5352 1.0662C17.7061 1.1196 18.5057 1.30556 19.2054 1.57751C19.9288 1.85858 20.5422 2.2347 21.1537 2.84623C21.7653 3.45779 22.1414 4.07123 22.4225 4.79454C22.6944 5.49426 22.8804 6.29385 22.9338 7.46471C22.9873 8.63798 23 9.01258 23 12C23 14.9874 22.9873 15.362 22.9338 16.5353C22.8804 17.7061 22.6944 18.5057 22.4225 19.2054C22.1414 19.9288 21.7653 20.5422 21.1537 21.1537C20.5422 21.7653 19.9288 22.1414 19.2054 22.4225C18.5057 22.6944 17.7061 22.8804 16.5352 22.9338C15.362 22.9873 14.9874 23 12 23C9.01258 23 8.63794 22.9873 7.46471 22.9338C6.29385 22.8804 5.49426 22.6944 4.79454 22.4225C4.07123 22.1414 3.45775 21.7653 2.84623 21.1537C2.23466 20.5422 1.85858 19.9287 1.57746 19.2054C1.30552 18.5057 1.1196 17.7061 1.06615 16.5353C1.01262 15.362 1 14.9874 1 12C1 9.01254 1.01262 8.63798 1.06615 7.46471C1.1196 6.29385 1.30552 5.49426 1.57746 4.79454C1.85858 4.07123 2.23466 3.45779 2.84623 2.84623C3.45775 2.2347 4.07123 1.85858 4.79454 1.57751C5.49426 1.30556 6.29385 1.1196 7.46471 1.0662ZM16.4449 3.04608C15.285 2.99316 14.9371 2.98198 12 2.98198C9.06284 2.98198 8.71496 2.99316 7.55501 3.04608C6.48257 3.09503 5.90008 3.27423 5.51247 3.42487C4.99906 3.62442 4.63259 3.86278 4.24768 4.24773C3.86278 4.63263 3.62437 4.99906 3.42482 5.51252C3.27423 5.90013 3.09503 6.48257 3.04608 7.55506C2.99316 8.71496 2.98198 9.06288 2.98198 12C2.98198 14.9371 2.99316 15.285 3.04608 16.4449C3.09503 17.5174 3.27423 18.0999 3.42482 18.4875C3.62437 19.0009 3.86278 19.3674 4.24768 19.7523C4.63259 20.1372 4.99906 20.3756 5.51247 20.5751C5.90008 20.7257 6.48257 20.905 7.55506 20.9539C8.71479 21.0068 9.06262 21.018 12 21.018C14.9373 21.018 15.2852 21.0068 16.4449 20.9539C17.5174 20.905 18.0998 20.7257 18.4874 20.5751C19.0009 20.3756 19.3674 20.1372 19.7523 19.7523C20.1372 19.3674 20.3755 19.0009 20.5751 18.4875C20.7257 18.0999 20.9049 17.5174 20.9539 16.4449C21.0068 15.285 21.018 14.9371 21.018 12C21.018 9.06288 21.0068 8.71496 20.9539 7.55506C20.9049 6.48257 20.7257 5.90013 20.5751 5.51252C20.3755 4.99906 20.1372 4.63263 19.7523 4.24768C19.3674 3.86278 19.0009 3.62442 18.4874 3.42487C18.0998 3.27423 17.5174 3.09503 16.4449 3.04608ZM8.33329 12C8.33329 14.025 9.97495 15.6667 12 15.6667C14.025 15.6667 15.6667 14.025 15.6667 12C15.6667 9.97495 14.025 8.33333 12 8.33333C9.97495 8.33333 8.33329 9.97495 8.33329 12ZM6.35131 12C6.35131 8.88032 8.88032 6.35136 12 6.35136C15.1196 6.35136 17.6486 8.88032 17.6486 12C17.6486 15.1197 15.1196 17.6486 12 17.6486C8.88032 17.6486 6.35131 15.1197 6.35131 12ZM17.8718 7.44816C18.6008 7.44816 19.1918 6.8572 19.1918 6.12818C19.1918 5.39915 18.6008 4.8082 17.8718 4.8082C17.1428 4.8082 16.5518 5.39915 16.5518 6.12818C16.5518 6.8572 17.1428 7.44816 17.8718 7.44816Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_2844_2717)">
+                      </g>
+                      </svg>
+
+                      <span class="place__item-shares">40</span>
+                  </a>
+                  </li>
+
+                
+
+                    <li class="footer__social-item">
+                      <a href="/single.html"  class="footer__social-link">
+                        <svg class="footer__social-icon" width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 11.6421 11.6421 15 7.5 15C6.46585 15 5.48059 14.7907 4.58427 14.4121L6.49504 10.0447C6.97541 10.6368 7.70586 11 8.5 11C10.433 11 12 9.433 12 7.5V7C12 4.79086 10.2091 3 8 3H7C4.79086 3 3 4.79086 3 7V7.5C3 8.39609 3.33741 9.21457 3.89133 9.83346L4.63646 9.16654C4.2403 8.72391 4 8.14062 4 7.5V7C4 5.34315 5.34315 4 7 4H8C9.65685 4 11 5.34315 11 7V7.5C11 8.88071 9.88071 10 8.5 10C7.81943 10 7.21522 9.56451 7 8.91886L6.99463 8.90274L7.95815 6.70041L7.04199 6.29959L3.68991 13.9615C1.48133 12.6564 0 10.2512 0 7.5Z" fill="currentColor"/>
+                          </svg>
+
+                          <span class="place__item-shares">13K</span>
+                      </a>
+                      </li>
+
+                      <li class="footer__social-item">
+                        <a href="/single.html"  class="footer__social-link">
+                          <svg class="footer__social-icon" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z"/></svg>
+
+  
+                            <span class="place__item-shares">168K</span>
+                        </a>
+                        </li>
+
+
+              </ul>
+
+             
+
+            
+          </div>
+          </div>
+      </footer>
+    </div>
+   
+
+    <script type="module" src="./src/js/main.js"></script>
+  
+  
+  </body>
+</html>

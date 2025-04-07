@@ -1,0 +1,293 @@
+.single-page {
+
+
+    .header {
+        background-image: url(../../../public/images/header/single-header-bg.jpg);
+        min-height: 800px;
+        margin-bottom: 0;
+
+
+        &__subtitle {
+            font-size: 48px;
+
+          
+        }
+
+        &__author {
+            @include flex;
+            column-gap: 10px;
+            font-family: "Europa Regular", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            padding-bottom: 60px;
+
+            &-name {
+                font-size: 20px;
+            }
+
+            &-social {
+                @include flex;
+            
+            }
+
+            @media (width<=768px) {
+                @include flex-column;
+                align-items: center;
+                row-gap: 5px;
+                width: 100%;
+            }
+          
+        }
+
+        &__text-wrap {
+            max-width: 1790px;
+            margin: 0 auto;
+        }
+
+        &__text-inner {
+            max-width: 1084px;
+           margin-left: 210px;
+            text-align: left;
+            align-items: flex-start;
+
+            @media (width<=1200px) {
+                margin-left: 100px;
+            
+            }
+
+            @media (width<=992px) {
+                margin-left: 50px;
+            
+            }
+
+            @media (width<=768px) {
+                margin-left: 0;
+                padding: 0 20px;
+                text-align: center;
+                margin-top: 100px;
+            
+            }
+        }
+
+        &__title {
+            margin-bottom: 16px;
+
+            
+        }
+
+        &__subtitle {
+            line-height: 1;
+            margin-bottom: 20px;
+
+            @media  (width<=992px) {
+                font-size: 38px;
+            }
+
+            @media  (width<=768px) {
+                font-size: 28px;
+            }
+        }
+
+        
+    }
+
+    .devider {
+        background-color: $white;
+        height: 1px;
+        width: 20px;
+
+    }
+
+    .section-description {
+        margin: 67px 0 228px;
+
+        @media (width<=992px) {
+            margin-bottom: 150px;
+        }
+
+        @media (width<=768px) {
+            margin-bottom: 100px;
+        }
+    }
+        
+    
+    .descr {
+
+        font-family: "Europa Regular", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: 33px;
+
+        &-social {
+            @media (width<=768px) {
+                @include flex-between;
+               
+                width: 100%;
+      
+              
+            }
+        }
+        
+        &-inner {
+            @include flex;
+            align-items: flex-start;
+            column-gap: 70px;
+            max-width: 1195px;
+            margin: 0 auto;
+
+            @media (width<=768px) {
+                @include flex-column;
+                align-items: center;
+              
+            }
+            
+        }
+
+        &__title {
+            font-size: 48px;
+            text-transform: uppercase;
+            max-width: 998px;
+            line-height: 1.3;
+            font-family: "Europa Bold", Arial, Helvetica, sans-serif;
+            padding-left: 77px;
+            margin-bottom: 40px;
+            position: relative;
+
+            @media (width<=992px) {
+                font-size: 38px;
+            }
+
+            @media (width<=768px) {
+                font-size: 32px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url('../../../public/images/header/quotes.svg');
+                background-repeat: no-repeat;
+                width: 41px;
+                height: 38px;
+                
+            }
+
+            &--small {
+                font-size: 40px;
+                padding-left: 0;
+                margin-bottom: 20px;
+                &::before {
+                    display: none;
+                }
+
+                @media (width<=992px) {
+                    font-size: 32px;
+                }
+    
+                @media (width<=768px) {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        &__text {
+           &:nth-of-type(odd) {
+            margin-bottom: 40px;
+           }
+
+           &:nth-of-type(even) {
+            margin-bottom: 80px;
+           }
+
+           &:last-child {
+            margin-bottom: 0;
+           }
+
+            
+        }
+
+        &-social {
+           
+            font-family: "Europa Regular", Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+           
+        }
+
+        &-social__views {
+            @include flex-column;
+            align-items: center;
+            row-gap: 60px;
+            margin-bottom: 41px;
+
+            @media (width<=768px) {
+                flex-direction: row;
+                column-gap: 20px;
+            }
+        } 
+
+        &-social__list {
+            @include flex-column;
+            row-gap: 17px;
+
+            @media (width<=768px) {
+                flex-direction: row;
+                column-gap: 20px;
+            }
+        }
+
+        &-social__item {
+            @include flex-column;
+            align-items: center;
+        }
+
+        &-social__icon {
+            margin-bottom: 8px;
+        }
+
+        &__list {
+            
+            padding-left: 64px;
+            margin-bottom: 40px;
+
+            &-item {
+                list-style: disc;
+            }
+        }
+    }
+
+
+
+  
+    
+
+}
+
+
+// .header {
+   
+//     animation: ocean-move 20s linear infinite;
+//   }
+  
+//   @keyframes ocean-move {
+//     0% {
+//       background-position-y: 0;
+//     }
+
+//     25% {
+//       background-position-y: -25px;
+//     }
+
+//     50% {
+//       background-position-y: -50px;
+//     }
+
+//     75% {
+//       background-position-y: -25px;
+//     }
+//     100% {
+//       background-position-y: 0;
+//     }
+//   }
+  

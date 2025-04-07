@@ -1,0 +1,112 @@
+.destination {
+
+    margin-bottom: 200px;
+
+    @media(width<=992px) {
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    @media(width<=768px) {
+       
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 20px;
+      
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+       
+        margin-bottom: 46px;
+    }
+   
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        @media (width<=1650px) {
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 40px;
+            
+        }
+
+        @media (width<=1360px) {
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 40px;
+            justify-items: center;
+            
+        }
+
+        @media (width<=1024px) {
+            grid-template-columns: repeat(2, 1fr);
+         
+        }
+
+        @media (width<=768px) {
+            grid-template-columns: repeat(1, 1fr);
+         
+        }
+    }
+
+    &__item {
+        position: relative;
+        min-height: 260px;
+        max-width: 320px;
+        overflow: hidden;
+        transition: transform 0.3s;
+      
+        @media (hover: hover) {
+          &:hover {
+            transform: scale(1.1);
+      
+            &::before {
+              animation: shine 0.8s ease-in-out 1;
+            }
+          }
+      
+          &::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+              120deg,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(255, 255, 255, 0.6) 50%,
+              rgba(255, 255, 255, 0) 100%
+            );
+            transform: translateX(-100%) rotate(25deg);
+            pointer-events: none;
+          }
+        }
+      
+        &-title {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          transform: translateY(-50%);
+          color: $white;
+        }
+
+    }
+}
+
+@keyframes shine {
+    0% {
+      transform: translateX(-100%) rotate(25deg);
+    }
+    100% {
+      transform: translateX(100%) rotate(25deg);
+    }
+  }

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Europa Regular";
+    src:
+      url("../../../public/fonts/europa-regular.woff2") format("woff2"),
+      url("../../../public/fonts/europa-regular.woff") format("woff");
+      display: swap;
+      font-weight: 400;
+  }
+
+
+  @font-face {
+    font-family: "Europa Bold";
+    src:
+      url("../../../public/fonts/europa-bold.woff2") format("woff2"),
+      url("../../../public/fonts/europa-bold.woff") format("woff");
+      display: swap;
+      font-weight: 700;
+  }

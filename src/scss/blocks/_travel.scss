@@ -1,0 +1,77 @@
+
+
+
+.travel {
+
+    background-image: url('../../../public/images/travel/travel-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 178px;
+    padding: 153px 0;
+
+    @media (width<=992px) {
+        min-height: 510px;
+        padding: 75px 0;
+        margin-bottom: 100px;
+    }
+
+    @media (width<=768px) {
+     
+        margin-bottom: 80px;
+    }
+    
+
+    &__tag {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(6px);
+        padding: 0 10px;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 4px;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 1;
+        max-width: 1024px;
+        margin: 0 auto 20px;
+
+        @media (width<=992px) {
+            font-size: 38px;
+          
+        }
+
+        @media (width<=768px) {
+            font-size: 32px;
+           
+        }
+
+    }
+
+    &__subtitle {
+        font-family: 'EuropaNuova-Bold', sans-serif;
+        font-size: 20px;
+        line-height: 22px;
+        max-width: 750px;
+        margin: 0 auto;
+
+        @media (width<=992px) {
+            font-size: 18x;
+        }
+
+        @media (width<=768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        margin: 30px auto 0;
+        color: #7A65E1;
+    }
+}

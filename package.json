@@ -1,0 +1,24 @@
+{
+  "name": "peach",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.86.0",
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "i18next": "^24.2.3",
+    "normalize.css": "^8.0.1",
+    "wow.js": "^1.2.2",
+    "wowjs": "^1.1.3"
+  }
+}
