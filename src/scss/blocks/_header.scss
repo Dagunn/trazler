@@ -98,6 +98,7 @@
           &.active {
             left: 0;
             z-index: 10px;
+            overflow-y: auto;
           }
     
           &__item {
