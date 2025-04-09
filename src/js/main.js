@@ -14,10 +14,11 @@ import './tabs.js'
 
 import i18next from 'i18next';
 
-
+const savedLang = localStorage.getItem('selectedLang') || 'en';
 
 i18next.init({
-    lng: 'en',
+  lng: savedLang,
+   
     resources: {
       en: {
         translation: {
@@ -202,6 +203,7 @@ i18next.init({
     }
   }, function(err, t) {
     updateContent();
+    document.getElementById('languageSwitcher').value = i18next.language;
   });
   
   function updateContent() {
@@ -212,7 +214,9 @@ i18next.init({
   }
   
   document.getElementById('languageSwitcher').addEventListener('change', function () {
-    i18next.changeLanguage(this.value, updateContent);
+    const lang = this.value;
+  localStorage.setItem('selectedLang', lang); 
+  i18next.changeLanguage(lang, updateContent);
   });
   
 
